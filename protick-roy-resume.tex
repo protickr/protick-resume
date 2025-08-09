@@ -6,13 +6,14 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
 \usepackage{parskip}
-\usepackage{tabularx}
+\usepackage[T1]{fontenc}
 \usepackage{array}
 
-% Tight, single-column ATS-friendly styling
-\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+% Formatting tweaks
+\pagenumbering{gobble} % remove page numbers
+\setlength{\parskip}{3pt}
 \setlist[itemize]{topsep=2pt,itemsep=2pt,parsep=0pt,leftmargin=12pt}
-\setlength{\parskip}{2pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
 
 \begin{document}
 
@@ -91,6 +92,6 @@ Dhaka, Bangladesh \textbar{} Remote \\[-1pt]
 %====================
 \section*{Education}
 \textbf{Bachelor of Science in Computer Science and Software Engineering}\\
-American International University -- Bangladesh \hfill Sep 2013 -- Sep 2017 \hspace{1em} CGPA: 3.89 / 4.00
+American International University -- Bangladesh \hfill Sep 2013 -- Jan 2018 \hspace{1em} CGPA: 3.89 / 4.00
 
 \end{document}
