@@ -1,0 +1,165 @@
+\documentclass[a4paper,10pt]{article}
+
+%====================
+% PACKAGES
+%====================
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} % Clean, modern font
+\usepackage{array}
+\usepackage[none]{hyphenat} % Disable word breaks
+\usepackage{multicol} % For compact sections if needed
+\usepackage{graphicx} % For profile picture
+
+% typography + URL breaking
+\usepackage[final]{microtype}
+\Urlmuskip=0mu plus 1mu
+\hypersetup{breaklinks=true}
+
+\linespread{1.08}
+\sloppy
+
+% Page penalties (no orphans/widows)
+\clubpenalty=10000
+\widowpenalty=10000
+\brokenpenalty=10000
+
+% Formatting tweaks
+\pagenumbering{gobble}
+\setlength{\parskip}{3pt}
+\setlist[itemize]{topsep=1pt,itemsep=1pt,parsep=0pt,leftmargin=12pt}
+
+%====================
+% SECTION STYLE
+%====================
+\titleformat{\section}{\large\scshape}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt plus 2pt minus 2pt}{4pt}
+
+%====================
+% DOCUMENT
+%====================
+\begin{document}
+
+%====================
+% HEADER (with photo)
+%====================
+\noindent
+\begin{minipage}[c]{0.78\textwidth}
+    {\Huge \textbf{Protick Roy}}\\[4pt]
+    \small Dhaka, Bangladesh \textbar{}
+    \href{mailto:protickrr@gmail.com}{protickrr@gmail.com} \textbar{}
+    \href{tel:+8801301212424}{+8801301212424} \textbar{}
+    \href{https://www.linkedin.com/in/protickroy}{linkedin.com/in/protickroy} 
+    \href{https://github.com/protickr}{github.com/protickr}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.12\textwidth}
+    \includegraphics[width=\linewidth]{pp.jpg} % <-- replace with your photo file
+\end{minipage}
+
+\vspace{8pt}
+
+%====================
+% SUMMARY
+%====================
+\section*{Summary}
+Software Engineer with over 5 years of experience building SaaS, EdTech, ERP, and real-time communication platforms.
+Skilled in designing scalable backend systems, APIs, and cloud solutions with a track record of improving performance,
+implementing secure workflows and ensuring high availability.
+Passionate about writing clean, maintainable code and delivering reliable software that makes a meaningful impact.
+
+\vspace{6pt}
+
+%====================
+% EXPERIENCE
+%====================
+\section*{Experience}
+
+\textbf{Software Engineer} \hfill Aug 2023 -- Present\\[-2pt]
+\textit{Ngaze Inc. \textbar{} Dhaka, Bangladesh}\\[-4pt]
+\begin{itemize}
+  \item Translated stakeholder requirements into data models and production-ready features, achieving near-perfect alignment with customer needs and reducing rework.
+  \item Engineered stateless, type-safe REST APIs with consistent validation/serialization and data integrity guarantees, cutting integration bugs reported by frontend teams by 45\% and speeding feature integration.
+  \item Built a content versioning system that let admins publish, update and archive without impacting live content, reducing publishing errors by 90\% and eliminating rollback downtime.
+  \item Integrated payment gateways in a modular framework, enabling new gateways to be added in under a day and reducing integration effort by 70\%.
+  \item Restructured the backend into a modular, standardized architecture, improving maintainability, scalability and onboarding for new developers.
+  \item Implemented BullMQ job queues for reporting/analytics, improving dashboard load times and boosting responsiveness for users.
+  \item Ensured reliability of CI/CD pipelines and Kubernetes workloads on GCP by troubleshooting failures and monitoring logs for live issues, and configured/deployed new services for staging and production.
+  \item Partnered with frontend developers to refine API usability and ensure smooth adoption during integration.
+  \item Collaborated with senior engineers on architecture decisions, securing approvals for major feature implementations.
+\end{itemize}
+{\footnotesize\textsf{TypeScript, Fastify, React, Next.js, SCSS, BullMQ, Stripe, Redis, Docker, Kubernetes, GCP, AWS, GitHub Actions}}
+
+\vspace{2pt}
+
+\textbf{Software Engineer (Contract)} \hfill Oct 2020 -- Jul 2023\\[-2pt]
+\textit{Omnisoft Lab \textbar{} Dhaka, Bangladesh}\\[-4pt]
+\begin{itemize}
+  \item Collaborated with the core development team on project-based contracts, often acting as a lead by unblocking teammates, reviewing designs and guiding implementation across system architecture, backend APIs, frontend integrations, cloud deployments and monitoring.
+  \item Established project structures, version control workflows, development pipelines and deployment processes to ensure consistent and reliable delivery.
+  \item \textbf{Dollabills} (\href{https://dollabills.club}{dollabills.club}): Social platform with real-time chat and video conferencing; implemented real-time messaging, audio/video calling and streaming features, while optimizing queries and ensuring scalable performance. Integrated PayPal and Stripe payments.
+  \item \textbf{Inventory \& HR Management System} (Shamima Rashid Enterprise, offline): Designed role-based authorization, HR and inventory modules; introduced FIFO stock clearance methodology despite client ambiguity, enabling accurate reporting and stock flow. Deployed and maintained on DigitalOcean.
+  \item \textbf{CPRExchange} (\href{https://cprexchange.com}{cprexchange.com}): Recommerce marketplace with product listings and secure payments; implemented OTP service for authentication and managed staging, production deployments.
+\end{itemize}
+{\footnotesize\textsf{TypeScript (Express.js, Next.js, TypeORM), PHP (Laravel), MySQL, AWS (Chime, Kinesis, S3, EC2, Route53), DigitalOcean, PM2, Nginx, WebRTC, WebSocket}}
+
+\vspace{2pt}
+\newpage
+\textbf{Junior Software Engineer} \hfill Sep 2019 -- Apr 2020\\[-2pt]
+\textit{Divine IT Limited \textbar{} Dhaka, Bangladesh}\\[-4pt]
+\begin{itemize}
+  \item Developed ERP modules, starting with CRUD features and later advancing to core engineering tasks, integrating the in-house Central Authentication System and resolving client-specific ERP bugs.
+  \item Built an attendance device monitoring system to ingest and normalize multi-model device data, sync with ERP and improve HR reporting accuracy.
+  \item Collaborated directly with business analysts, product managers, IT/deployment teams and executives; wrote deployment documentation to support cloud rollouts.
+\end{itemize}
+{\footnotesize\textsf{Python (Django, SQLAlchemy), HTML, JavaScript, jQuery, CSS, Git, GitLab, MySQL, SQLite, Agile/Scrum, Linux Mint}}
+
+\vspace{2pt}
+
+\textbf{Junior Software Engineer} \hfill Oct 2018 -- Jul 2019\\[-2pt]
+\textit{BFIN IT Limited \textbar{} Dhaka, Bangladesh}\\[-4pt]
+\begin{itemize}
+  \item Developed and maintained ERP modules using PHP, JavaScript, jQuery and Bootstrap, ensuring stability and usability for business operations.
+  \item Integrated payment gateways and third-party APIs to enable secure online transactions and expand ERP functionality.
+  \item Collaborated with senior engineers on debugging, feature rollouts and client requests, gaining experience in full-stack workflows and production deployments.
+\end{itemize}
+{\footnotesize\textsf{PHP, JavaScript, jQuery, Bootstrap, MySQL}}
+
+%====================
+% PROJECTS
+%====================
+\section*{Projects}
+\begin{itemize}
+  \item \textbf{Video Surveillance \& Security System} (\href{https://github.com/protickr/video_surveillance_and_security_system}{github.com/protickr/video\_surveillance\_and\_security\_system}): IoT system using computer vision to detect motion in real time and send email alerts; included Raspberry Pi setup and cloud deployment.\\
+  {\footnotesize\textsf{Python, OpenCV, Raspberry Pi, Shell, PHP, JavaScript}}
+  \vspace{2pt}
+  \item \textbf{The Wild Oasis} (\href{https://oasisprotick.vercel.app/login}{oasisprotick.vercel.app/login}): Hotel management app with secure auth, booking flows and admin dashboard; state managed with Redux and deployed on Vercel.\\
+  {\footnotesize\textsf{React, Redux, Supabase, styled-components, Vite, Vercel}}
+\end{itemize}
+
+%====================
+% SKILLS
+%====================
+\section*{Technical Skills}
+\begin{tabular}{@{}ll}
+Languages: & JavaScript, TypeScript, Python, PHP, SQL \\
+Frontend/Frameworks: & HTML5, CSS3, SCSS, React, Next.js, Tailwind, Express.js, Fastify, Django, Laravel \\
+Databases/ORM: & MySQL, MongoDB, Redis, Prisma, TypeORM, SQLAlchemy \\
+Cloud/DevOps: & Docker, Kubernetes, Nginx, Apache, GCP, AWS, DigitalOcean, CI/CD \\
+Tools/Practices: & Git, GitHub/GitLab, Postman, Agile/Scrum \\
+Environments: & Linux, macOS \\
+Preferred Stack: & TypeScript | Fastify (REST/JSON) | Next.js | MySQL + Prisma | Docker \& K8s | GCP \\
+\end{tabular}
+
+%====================
+% EDUCATION
+%====================
+\section*{Education}
+\textbf{Bachelor of Science in Computer Science and Software Engineering}\\
+American International University Bangladesh \hfill Sep 2013 -- Jan 2018 \hspace{1em} CGPA: 3.89 / 4.00
+
+\end{document}
